@@ -1,0 +1,5 @@
+docker save --output "/c/path/sandbox_asdf.tar"
+docker save repository:tag | gzip -c > "/c/path/asdf.tar.gz"
+IMAGE_NAME="repository:tag"
+OUTPUT_FILE="/c/path/asdf.tar.gz"
+docker save $IMAGE_NAME | gzip -c > "$OUTPUT_FILE"
