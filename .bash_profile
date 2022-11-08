@@ -652,5 +652,13 @@ function bash_save()
 	rm -Rf "$HOME/.git/"
 }
 
+# Function to disable hardware keys on Teams so it doesn't hijack the play button on the keyboard
+# - https://techcommunity.microsoft.com/t5/microsoft-teams/media-keys-and-teams-notifications/m-p/1949714
+function fix_teams()
+{
+	pkill -f teams
+	$HOME/AppData/Local/Microsoft/Teams/Update.exe --processStart "Teams.exe" -disable-features=HardwareMediaKeyHandling
+}
+
 misc_Setup_Environment
 help
