@@ -660,5 +660,15 @@ function fix_teams()
 	$HOME/AppData/Local/Microsoft/Teams/Update.exe --processStart "Teams.exe" -disable-features=HardwareMediaKeyHandling
 }
 
+function anyconnect_enable()
+{
+	powershell -file "$HOME/scripts/enableAnyConnect.ps1"
+}
+
+function anyconnect_disable()
+{
+	powershell -file "$HOME/scripts/disableAnyConnect.ps1"
+}
+
 misc_Setup_Environment
 help
