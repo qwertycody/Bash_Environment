@@ -7,4 +7,7 @@ git init
 git remote add origin "$remoteOrigin"
 git pull origin master
 rm -Rf .git/
+
+#Task Scheduler Command Template for Startup Commands
+start "" "C:\Program Files\Git\git-bash.exe" -c "fix_teams"
 ```
