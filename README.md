@@ -9,5 +9,6 @@ git pull origin master
 rm -Rf .git/
 
 #Task Scheduler Command Template for Startup Commands
-start "" "C:\Program Files\Git\git-bash.exe" -c "fix_teams"
+#Program = %comspec%
+#Arguments = /c start "" /min "C:\Program Files\Git\git-bash.exe" -c "fix_teams" ^& exit
 ```
